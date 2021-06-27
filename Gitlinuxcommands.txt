@@ -1,0 +1,56 @@
+1. git --version
+
+2. git init
+
+3. Create 2 or 3 files - .java, .py, .txt
+
+4. git add test.txt (for all files --> git add .)
+
+5. git commit -m "Updated file"
+
+   github.com:
+  
+   $ git config --global user.name "John Doe"
+   $ git config --global user.email johndoe@example.com
+
+6. github.com -> Create New Repository
+
+7. Now, set your remote repository
+
+    git remote add origin https://github.com/muthu1809/Govt.git
+
+8. push your content
+
+    git push -u origin master
+
+9. Provide your git username and password
+
+10. Now, edit your file in github.com
+
+11. After #10, edit your file in your local machine 
+
+12. Now, repeat steps 4, 5 and 8.  
+
+13. local to remote --> push
+
+14. remote to local --> ???
+  
+    git pull
+
+15. git status
+
+16. git log
+
+17. To change branch: 
+
+    git checkout -b 'mybranch'
+
+18. Now, edit your existing file in local
+
+19. Now, you can repeat earlier steps
+
+20. To go back to previous branch
+
+    git checkout master
+
+21. git merge mybranch
