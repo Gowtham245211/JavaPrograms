@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Day 6</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fruit">Choose a fruit :</label><br>
+            <select id="fruit" name="fruit" size="3" multiple>
+                <option value="apple" selected>Apple</option>
+                <option value="orange" selected>Orange</option>
+                <option value="banana" selected>Banana</option>
+            </select>
+            </fieldset>
+        </form>
+        <textarea name="message" style="width:200px; height:600px;">
+        The cat was playing in the garden.
+        </textarea>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name :</label>
+                <input type="text" id="fname" name="fname" value="fname" ><br>
+                <label for="lname">Lastname :</label>
+                <input type="text" id="lname" name="lname" value="lname" ><br>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+               <legend>Login</legend><br>
+               <label for="username">Username:</label><br>
+               <input type="text" id="username" name="user" value="user"><br>
+               <label for="password">Password:</label><br>
+               <input type="text" id="password" name="password" value="password"><br>
+               <input type="Submit" value="Submit">
+               <input type="reset">
+            </fieldset>
+        </form>
+        <input type="button" onclick="alert('Hello World')" value="Click Me!">
+        <form>
+            <label for="favcolor">Choose a color :</label>
+            <input type="color" id="favcolor" name="favcolor">  
+        </form>
+        <form>
+            <label for="email">Enter your email :</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/action_page.php">
+            <label for="myfile">Choose a file :</label>
+            <input type="file" id="myfile" name="myfile">
+            <input type="submit" value="Submit">
+        </form>
+        
+    </body>
+</html>
