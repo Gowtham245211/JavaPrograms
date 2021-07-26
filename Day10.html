@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "HTML practice day 10"
+        </title>
+        <script>
+            function myFunction(){
+                document.getElementById("a").innerHTML="Paragraph changed";
+            }
+        </script>
+    </head>
+
+    <body>
+         <p id="practice">Hello World</p>
+         <button type="button" 
+                onclick="document.getElementById('practice').style.fontSize='35px'">
+                Click Me!
+        </button>
+
+        <p id="a">Original Paragraph</p>
+        
+        <button type="button"
+                onclick="myFunction()">Try this
+        </button>
+        <p id="b"></p>
+        <script>
+            let x = 5;
+            let y = 5;
+            //window.alert(5+6);
+            //window.print();
+            document.getElementById("b").innerHTML=(x==y);
+            //It is a common practice to declare objects with the const keyword.
+            let x="John";
+            let y=new String("John");
+
+            document.getElementById("c").innerHTML=typeof x + " " + typeof y;
+        </script>
+        <p id="c"></p>
+        <script>
+            /*const Myself = {
+                firstName:"Gowtham",
+                lastName:"Ravichandran",
+                age:25,
+                fullName: function Fullname(){ return this.firstName + " "+this.lastName;}
+            };*/
+        </script>
+        
+    </body>
+</html>
