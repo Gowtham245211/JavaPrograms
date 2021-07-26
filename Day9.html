@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <title>
+            "HTML and JavaScript Learning"
+        </title>
+    </HEAD>
+
+    <body>
+        <p id="math"></p>
+
+        <script type="text/JavaScript">
+            
+             var x = 10;
+             var y = "Gowtham";
+             var z = x+y;
+           
+            document.getElementById("math").innerHTML = z;
+        
+        </script>
+
+        <p id="mat"></p>
+        <p id="random"></p>
+        <p id="fruitname"></p>
+
+        <script type="text/JavaScript">
+         
+            var x;
+            x++;
+
+            var fruits = ["Apple","Orange","Blueberries","Mango","Pear"];
+            //fruits.shift();
+            //fruits.pop();
+            //fruits.unshift();
+            fruits.push("Cherry");
+            fruits[1] = "Banana";
+            delete fruits[3];
+            fruits.splice(2,0,"Lemon","Muskmelon");
+            //fruits.sort();
+            //fruits.reverse();
+
+            var car = {type:"BMW",color:"black"};
+
+            /*for (x in car) {
+
+                  txt+=boys.x;
+            }
+            document.getElementById("practice").innerHTML=txt;*/
+            
+            
+
+            document.getElementById("mat").innerHTML = "The type of car is: " 
+            + car.type + "<br>"+" and its color is "+car.color +" and it's \"length\" is " +car.color.length ;
+
+            document.getElementById("random").innerHTML = Math.max(56,78,89);
+            document.getElementById("random").innerHTML = Math.round(14.9);
+            //Math.random();
+
+            document.getElementById("fruitname").innerHTML=fruits[1];
+            document.getElementById("fruitname").innerHTML=fruits.toString();
+            document.getElementById("fruitname").innerHTML=fruits.join("\%---\%");
+            
+        </script> 
+
+        <p id="practice"></p>
+
+        <script>
+        
+            var boys = ["Amen","Base","Camel"];
+            var girls = ["Charlie", "Katie","Mommy"];
+
+            document.getElementById("practice").innerHTML=girls.concat(boys);
+
+            var score = 65;
+
+            if(score<50){
+                document.write("F");
+            }else if(score>50 && score<75){
+                document.write("B");
+            }
+
+            function myfunction(a,b) {
+                   return a*b;
+
+            }
+            document.getElementById("practice").innerHTML=myfunction(5,3);
+
+         </script>
+
+         <button onclick="getElementById('demo').innerHTML=Date()">Time</button>
+    </body>
+</HTML>
