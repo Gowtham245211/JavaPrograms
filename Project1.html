@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<HTML LAN="EN">
+    <head>
+        <style>
+            .city {background-color: burlywood;}
+            .place {background-color: darkblue; 
+                    color: darkkhaki;}
+        </style>
+        <title>Javascript practice</title>
+        <script>alert("Hi I'm learning Javascript")</script>
+    </head>
+    <body>
+        <h2>Practice</h2>
+        <input id="from" placeholder="Enter a city name : ">
+        <button onclick="check()">Submit</button>
+        <p id="to">Entered city name is</p>
+        
+        <script>
+            function check(){
+               txt = document.getElementById("from").value;
+               document.getElementById("to").innerHTML=txt;
+            }
+        </script>
+
+        <h3>Personal Details</h3>
+
+        <input placeholder="Enter id"><br><br>
+
+        <div id="mydiv" class="city" >
+            
+            <input placeholder="Enter the first name"><br><br>
+            <input placeholder="Enter the last name"><br><br>
+            <input placeholder="Enter the country name"><br><br>
+
+            <button onclick="bat()" class="place" >Submit</button>
+            
+            <p>           </p>
+            <p>           </p>
+            <p>           </p>
+            
+        </div >
+
+        <script>
+             function bat() {
+
+                 area=document.getElementById("mydiv");
+                 box=area.getElementsByTagName("input");
+                 data=document.getElementsByTagName("p");
+                
+
+                 for(i=0;i<box.length;i++){
+                    data[i].innerHTML=box[i].value;
+                 }
+            }
+        </script>
+        
+    </body>
+</HTML>
