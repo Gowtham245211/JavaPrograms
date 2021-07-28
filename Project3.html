@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <Style>
+            div{width:30%;height:200px;border:1px solid blue;background-color: darksalmon;}
+            p{color:blue;font-size:22px;font-weight:bold    ;}
+        </Style>
+        <title>Java Practice 3</title>
+    </head>
+
+    <body>
+        <h1 style="color:darkblue">Create new HTML element</h1>
+        <div id="mydiv">
+
+        </div><br>
+        <input id="myinput" placeholder="Enter data"><br><br>
+        <button onclick="create()">Submit</button>
+        <script>
+            function create(){
+                value=document.getElementById("myinput").value;
+                text = document.createTextNode(value);
+                element=document.createElement("p");
+                element.appendChild(text);
+                mydiv=document.getElementById("mydiv");
+                mydiv.appendChild(element);
+            }
+        </script>
+          
+    </body>
+</html>
