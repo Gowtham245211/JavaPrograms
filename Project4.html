@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color:thistle;
+            }
+        </style>
+        <title>Javascript practice 4</title>
+    </head>
+    <body>
+        <div>
+            <h2>Person A</h2>
+            <input id="1">
+            <button onclick="sendsms()">Send</button>
+        </div><br><br>
+        <div id="mydiv">
+
+        </div><br><br>
+        <div style="padding-left: 10px;padding-top: 1px ;">
+            <h2>Person B</h2>
+            <input id="2">
+            <button onclick="sendsms()">Send</button>
+        </div>
+
+        <script>
+            function sendsms(){
+                    value1=document.getElementById("1").value;
+                    value2=document.getElementById("2").value;
+                    element = document.createElement("li");
+                    
+                    if(value1!="") {
+                       txt1=document.createTextNode(value1);
+                       element.appendChild(txt1);
+                       element.style.color="blue"
+                       mydiv=document.getElementById("mydiv");
+                       mydiv.appendChild(element);
+                       document.getElementById("1").value="";
+                    }
+
+                    else if(value2!="") {
+                       txt2=document.createTextNode(value2);
+                       element.appendChild(txt2);
+                       element.style.color="Red";
+                       mydiv=document.getElementById("mydiv");
+                       mydiv.appendChild(element);
+                       document.getElementById("2").value="";
+                    }
+
+            }
+        </script>
+    </body>
+</html>
