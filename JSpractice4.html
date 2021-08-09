@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Practice 4
+        </title>
+    </head>
+    <body>
+        <div id="btn">
+            
+            <p>Hi!!</p>
+            <p>Hello!!</p>
+            <p>Welcome!!</p>
+
+        </div>
+
+        <p id="demo"></p>
+        <button onclick="clock()">Try me</button>
+        <script>
+            
+            /*const para = document.createElement("p");
+            const txt = document.createTextNode("Hi");
+            para.appendChild(txt);
+            
+            abc = document.getElementById("btn");
+            abc.appendChild(para);*/
+
+            function clock() {
+
+                const myNodelist = document.querySelectorAll("p");
+
+               document.getElementById("demo").innerHTML =
+                      "The innerHTML of the second paragraph is: " + myNodelist[0].innerHTML;
+
+            }
+
+        </script>
+    </body>
+</html>
